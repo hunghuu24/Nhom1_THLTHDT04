@@ -4,7 +4,8 @@ public class Sach {
     private String tacGia;
     private int namXuatBan;
     private int soLuong;
-
+    public Sach() {
+    }
     public Sach(String maSach, String tieuDe, String tacGia, int namXuatBan, int soLuong) {
         this.maSach = maSach;
         this.tieuDe = tieuDe;
@@ -12,17 +13,6 @@ public class Sach {
         this.namXuatBan = namXuatBan;
         this.soLuong = soLuong;
     }
-
-    public void hienThiThongTin() {
-        System.out.println("===== THONG TIN SACH =====");
-        System.out.println("Ma sach: " + maSach);
-        System.out.println("Tieu de: " + tieuDe);
-        System.out.println("Tac gia: " + tacGia);
-        System.out.println("Nam xuat ban: " + namXuatBan);
-        System.out.println("So luong : " + soLuong);
-        System.out.println("-----------------------------");
-    }
-
     public String getMaSach() {
         return maSach;
     }
@@ -52,8 +42,7 @@ public class Sach {
     }
 
     public void setNamXuatBan(int namXuatBan) {
-        if (namXuatBan > 1)
-            this.namXuatBan = namXuatBan;
+        this.namXuatBan = namXuatBan;
     }
 
     public int getSoLuong() {
@@ -61,7 +50,15 @@ public class Sach {
     }
 
     public void setSoLuong(int soLuong) {
-        if (soLuong > 0)
-            this.soLuong = soLuong;
+        this.soLuong = soLuong;
+    }
+    public void hienThiThongTin() {
+        System.out.println("----- Thông tin sách -----");
+        System.out.println("Mã sách: " + maSach);
+        System.out.println("Tiêu đề: " + tieuDe);
+        System.out.println("Tác giả: " + tacGia);
+        System.out.println("Năm xuất bản: " + namXuatBan);
+        System.out.println("Số lượng: " + soLuong);
+        System.out.println("---------------------------");
     }
 }
