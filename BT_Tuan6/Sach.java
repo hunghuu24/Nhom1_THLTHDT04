@@ -60,4 +60,9 @@ public class Sach{
     public void setSoLuong(int soLuong) {
         this.soLuong = soLuong;
     }
+    //
+    @Override
+    public String toString() {
+        return "Mã sách: " + maSach + ", Tiêu đề: " + tieuDe + ", Tác giả: " + tacGia + ", Năm xuất bản: " + namXuatBan + ", Số lượng: " + soLuong;
+    }
 }
