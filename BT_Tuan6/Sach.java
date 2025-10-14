@@ -23,11 +23,11 @@ public class Sach{
         this.soLuong = 0;
     }
     public void hienThiThongTin() {
-        System.out.println("Mã sách: " + maSach);
-        System.out.println("Tiêu đề: " + tieuDe);
-        System.out.println("Tác giả: " + tacGia);
-        System.out.println("Năm xuất bản: " + namXuatBan);
-        System.out.println("Số lượng: " + soLuong);
+        System.out.println("Ma sach: " + maSach);
+        System.out.println("Tieu de: " + tieuDe);
+        System.out.println("Tac gia: " + tacGia);
+        System.out.println("Nam xuat ban: " + namXuatBan);
+        System.out.println("So luong: " + soLuong);
     }
     // Getters and Setters
     public String getMaSach() {
@@ -60,9 +60,8 @@ public class Sach{
     public void setSoLuong(int soLuong) {
         this.soLuong = soLuong;
     }
-    //
-    @Override
+     @Override
     public String toString() {
-        return "Mã sách: " + maSach + ", Tiêu đề: " + tieuDe + ", Tác giả: " + tacGia + ", Năm xuất bản: " + namXuatBan + ", Số lượng: " + soLuong;
+        return "Ma sach: " + maSach + ", Tieu de: " + tieuDe + ", Tac gia: " + tacGia + ", Nam xuat ban: " + namXuatBan + ", So luong: " + soLuong;
     }
 }
