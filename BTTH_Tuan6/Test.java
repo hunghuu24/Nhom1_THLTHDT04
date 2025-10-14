@@ -26,7 +26,7 @@ public class Test
         // Cập nhật sách
         System.out.println("Nhap thong tin muon cap nhat: ");
         String maupdate = sc.nextLine();
-        qls.capNhatSach(maupdate, new SachTieuThuyet("MS001", "Ronaldo", "J.K.Rowling", 2005, 10, "Võng Sư", true));
+        qls.capNhatSach(maupdate, new SachTieuThuyet("MS003", "Messi", "Truonqqianq", 2005, 10, "Võng Sư", true));
         qls.hienThiDanhSach();
 
         // Xóa sách
