@@ -1,4 +1,4 @@
-package BTTH_TUAN5;
+package BT_TUAN5;
 
 public class Sach{
     private String maSach;
