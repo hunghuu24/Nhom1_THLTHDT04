@@ -1,4 +1,4 @@
-package BTTH_Tuan6;
+package BT_Tuan6;
 import java.util.ArrayList;
 public class QuanLySach {
     
