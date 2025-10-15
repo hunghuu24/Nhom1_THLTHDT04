@@ -1,4 +1,4 @@
-package BTTH_Tuan6;
+package BT_Tuan6;
 public class SachTieuThuyet extends Sach {
     private String theLoai;
     private boolean laSachSerie;
