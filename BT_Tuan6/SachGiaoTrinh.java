@@ -1,4 +1,4 @@
-package BTTH_Tuan6;
+package BT_Tuan6;
 public class SachGiaoTrinh extends Sach {
     private String monHoc;
     private String capDo;
