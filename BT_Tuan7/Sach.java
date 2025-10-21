@@ -1,18 +1,20 @@
-package BT_Tuan6;
-public class Sach{
+package BT_Tuan7;
+public abstract class Sach{
     private String maSach;
     private String tieuDe;   
     private String tacGia;
     private int namXuatBan;
     private int soLuong;
+    private double giaCoBan;
     // Constructor -- tính chất: tính đóngg gói, kế thừa, đa hình, trừu tượng.
-    public Sach(String maSach, String tieuDe, String tacGia, int namXuatBan, int soLuong) 
+    public Sach(String maSach, String tieuDe, String tacGia, int namXuatBan, int soLuong, double giaCoBan) 
     {
         this.maSach = maSach;
         this.tieuDe = tieuDe;
         this.tacGia = tacGia;
         this.namXuatBan = namXuatBan;
         this.soLuong = soLuong;
+        this.giaCoBan = giaCoBan;
     }
     // Default constructor
     public Sach() {
@@ -21,6 +23,7 @@ public class Sach{
         this.tacGia = "";
         this.namXuatBan = 0;
         this.soLuong = 0;
+        this.giaCoBan = 0;
     }
     public void hienThiThongTin() {
         System.out.println("Ma sach: " + maSach);
@@ -28,6 +31,7 @@ public class Sach{
         System.out.println("Tac gia: " + tacGia);
         System.out.println("Nam xuat ban: " + namXuatBan);
         System.out.println("So luong: " + soLuong);
+        System.out.println("Gia co ban: " + giaCoBan);
     }
     // Getters and Setters
     public String getMaSach() {
@@ -60,8 +64,16 @@ public class Sach{
     public void setSoLuong(int soLuong) {
         this.soLuong = soLuong;
     }
+    public double getGiaCoBan() {
+        return giaCoBan;
+    }
+    public void setGiaCoBan(double giaCoBan) {
+        this.giaCoBan = giaCoBan;
+    }
      @Override
     public String toString() {
-        return "Ma sach: " + maSach + ", Tieu de: " + tieuDe + ", Tac gia: " + tacGia + ", Nam xuat ban: " + namXuatBan + ", So luong: " + soLuong;
+        return "Ma sach: " + maSach + " Tieu de: " + tieuDe +" Tac gia: " + tacGia +
+        " Nam xuat ban: " + namXuatBan +" So luong: " + soLuong +" Gia co ban: " + giaCoBan;
     }
+    public abstract double tinhGiaBan();
 }
