@@ -66,4 +66,14 @@ public class QuanLySachImpl implements IQuanLySach {
             }
         }
     }
+    @Override
+    public int tinhTongSoLuong() {
+        int tong = 0;
+        // Duyệt qua tất cả sách trong danh sách
+        for (Sach s : danhSachSach) {
+            // Lấy số lượng của từng cuốn sách và cộng dồn
+            tong += s.getSoLuong(); 
+        }
+        return tong;
+    }
 }

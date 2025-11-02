@@ -70,7 +70,9 @@ public class Test {
         } else {
             System.out.println("Khong tim thay sach MS003 de test.");
         }
-
+        System.out.println("\n--- KIEM TRA TINH TONG SO LUONG ---");
+        int tongSoLuong = qls.tinhTongSoLuong();
+        System.out.println("Tong so luong tat ca sach trong kho: " + tongSoLuong);
         sc.close();
     }
 }

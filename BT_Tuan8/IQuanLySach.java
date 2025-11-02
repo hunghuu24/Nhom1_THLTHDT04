@@ -6,4 +6,5 @@ public interface IQuanLySach {
     boolean capNhatSach(String maSach, Sach sachMoi);
     Sach timKiemSach(String maSach);
     void hienThiDanhSach();
+    int tinhTongSoLuong();
 }
