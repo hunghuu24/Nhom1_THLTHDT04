@@ -14,12 +14,13 @@ public class Test {
         System.out.println("--- THEM SACH MAU ---");
         // Lưu ý: Constructor của SachTieuThuyet/SachGiaoTrinh đã tự set giá cố định
         // là 30000/50000, nên tham số giaCoBan truyền vào không ảnh hưởng.
-        qls.themSach(new SachTieuThuyet("MS001", "Harry Potter", "J.K.Rowling", 2005, 6, 30000, "Fantasy", true));
-        qls.themSach(new SachTieuThuyet("MS002", "Tam Ly Hoc", "Giang", 2004, 15, 30000, "Tam Ly", false));
-        qls.themSach(new SachTieuThuyet("MS003", "Neu tinh yeu lang quen", "Thu Nhoi Bong", 2009, 200, 30000, "Khong biet", true));
-        qls.themSach(new SachGiaoTrinh("MS004", "Lap trinh huong doi tuong", "Tra My", 2015, 20, 50000, "Lap Trinh", "Cao"));
-        qls.themSach(new SachGiaoTrinh("MS005", "Toan cao cap", "Truong Giang", 2011, 20, 50000, "Toan", "Cao"));
-        qls.themSach(new SachGiaoTrinh("MS006", "Hoa sinh", "Ha Quyen", 2007, 50, 50000, "Hoa", "Cao"));
+        qls.themSach(new SachTieuThuyet("TT002", "Harry Potter", "J.K.Rowling", 2005, 6, 30000, "Fantasy", true));
+        qls.themSach(new SachTieuThuyet("TT001", "Tam Ly Hoc", "Giang", 2004, 15, 30000, "Tam Ly", false));
+        qls.themSach(new SachTieuThuyet("TT003", "Neu tinh yeu lang quen", "Thu Nhoi Bong", 2009, 200, 30000, "Khong biet", true));
+        qls.themSach(new SachGiaoTrinh("GT004", "Lap trinh huong doi tuong", "Tra My", 2015, 20, 50000, "Lap Trinh", "Cao"));
+        qls.themSach(new SachGiaoTrinh("GT005", "Toan cao cap", "Truong Giang", 2011, 20, 50000, "Toan", "Cao"));
+        qls.themSach(new SachGiaoTrinh("GT006", "Hoa sinh", "Ha Quyen", 2007, 50, 50000, "Hoa", "Cao"));
+        qls.themSach(new SachTieuThuyet("TT010", "Dac Nhan Tam", "Dale Carnegie", 2001, 150, 30000, "Ky nang song", false));
         System.out.println("------------------------------------");
         qls.hienThiDanhSach();
 
@@ -37,7 +38,7 @@ public class Test {
         System.out.println("\n--- CAP NHAT SACH ---");
         System.out.print("Nhap ma sach muon cap nhat: "); // Sửa lại prompt
         String maupdate = sc.nextLine();
-        qls.capNhatSach(maupdate, new SachTieuThuyet("MS007", "Messi", "Truong Giang", 2005, 10, 30000, "Võng Sư", true));
+        qls.capNhatSach(maupdate, new SachTieuThuyet("TT007", "Messi", "Truong Giang", 2005, 10, 30000, "Võng Sư", true));
         qls.hienThiDanhSach();
 
         // Xóa sách
@@ -48,9 +49,9 @@ public class Test {
         qls.hienThiDanhSach();
         
         // --- KIEM TRA INTERFACE IKiemKe ---
-        // Ta sẽ test trên sách "MS003" có sẵn trong danh sách
-        System.out.println("\n--- KIEM TRA INTERFACE IKiemKe (Test tren MS003) ---");
-        Sach sachTest = qls.timKiemSach("MS003");
+        // Ta sẽ test trên sách "TT003" có sẵn trong danh sách
+        System.out.println("\n--- KIEM TRA INTERFACE IKiemKe (Test tren TT003) ---");
+        Sach sachTest = qls.timKiemSach("TT003");
 
         if (sachTest != null) {
             System.out.println("Tim thay sach: " + sachTest.getTieuDe() + " (So luong: " + sachTest.getSoLuong() + ")");
@@ -68,7 +69,7 @@ public class Test {
             sachTest.capNhatViTri("Kho A1-Ke 5"); 
             // Phương thức capNhatViTri trong SachTieuThuyet/SachGiaoTrinh sẽ tự in ra thông báo
         } else {
-            System.out.println("Khong tim thay sach MS003 de test.");
+            System.out.println("Khong tim thay sach TT003 de test.");
         }
         System.out.println("\n--- KIEM TRA TINH TONG SO LUONG ---");
         int tongSoLuong = qls.tinhTongSoLuong();
