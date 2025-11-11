@@ -1,4 +1,4 @@
-package BT_Tuan8;
+package BT_Tuan9;
 
 public interface IKiemKe {
     boolean kiemTraTonKho(int soLuongToiThieu);
